@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    font-family: Helvetica Neue;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.center{
+    width: 95vw;
+    margin: auto;
+}
+
+header{
+    width: 100vw;
+    float: left;
+    position: fixed;
+}
+
+header .Background-Music{
+    width: 100vw;
+}
+
+main{
+    width:100vw;
+    float:left;
+    background-image:url("Images/Background/NightSky.gif");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    text-align: center;
+    padding-top: 15vh;
+    font-size: larger;
+}
+
+main h1{
+    color:white;
+    font-weight: bold;
+}
+
+main p{
+    color:#fff;
+    margin-bottom:30pt;
+}
+  
+main a{
+    padding:10pt;
+    border:1px solid #fff;
+    color:#fff;
+    text-decoration: none;
+    background-color:rgba(0,0,0,.5);
+}
+footer{
+    width: 100vw;
+    float: left;
+    background-color: #111;
+    color:white; 
+    text-align: center;
+    padding: 10pt;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color:#03e8fc;
+}

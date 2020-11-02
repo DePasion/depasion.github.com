@@ -1,0 +1,277 @@
+body{
+    margin: 0;
+    font-family: Helvetica;
+    background-image:url("Images/Background/ForestSky.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.center{
+    width: 95vw;
+    margin: auto;
+}
+
+header{    
+    float: left;
+    width: 100vw;
+    background-color: rgba(1, 1, 1, 0.75);
+    position: fixed;
+}
+
+nav{
+    float: left;
+    padding-top: 15pt;
+}
+  
+nav a{
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding: 10pt;
+    font-size: 16px;
+}
+
+nav .Contacts {
+    float: left;
+}
+  
+nav .Contacts .Contact-Menu {
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 10pt;
+    font-size: 16px;  
+}
+  
+nav a:hover, nav .Contacts:hover .Contact-Menu {
+    background-color: white;
+    color:#111;
+    border-radius: 10px;
+}
+  
+nav .Contact-Content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+}
+  
+nav .Contact-Content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+nav .Contact-Content a:hover {
+    background-color: #111;
+    color: white;
+}
+  
+nav .Contacts:hover .Contact-Content {
+    display: block;
+}
+
+nav .mobile-nav{
+    display: none;
+}
+
+header .Logo{
+    float: right;
+    color: white;
+    padding: 10pt;
+}
+
+main .Profile{
+    height: 175vh;
+    width: 100vw;
+}
+
+main .Profile-Picture{
+    width: 100vw;
+    float: left;
+    padding-top: 100pt;
+    padding-bottom: 50pt;
+}
+
+main .Profile img{
+    display: block;
+    border-radius: 25%;
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .Profile-Info{
+    width: 100vw;
+    float: left;
+    padding: 25pt 50pt 50pt 25pt;
+    background-color: rgba(7, 7, 7, 0.75);
+    color: white;
+    margin-bottom: 50pt;
+}
+
+main .Profile-Info p{
+    text-indent: 50px;
+    font-size: 20px;
+}
+
+main .Info{
+    width: 100vw;
+}
+
+main .Skill-Info{
+    padding: 50pt 100pt;
+    background-color: rgba(7, 7, 7, 0.75);
+    color: white;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50pt;
+}
+
+main .Achievement-Info{
+    padding: 50pt 100pt;
+    background-color: rgba(7, 7, 7, 0.75);
+    color: white;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    width: 100vw;
+    background-color: #111;
+    color:white; 
+    text-align: center;
+    padding: 5pt;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    background-color: white;
+    color:#111;
+}
+
+@media only screen and (max-width: 700px){
+    header nav a{
+        display: none;
+    }
+
+    header .Contacts{
+        display: none;
+    }
+
+    header nav .mobile-nav{
+        display: block;
+    }
+
+    nav .mobile-nav .mobile-menu {
+        color: white;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        border: none;
+        outline: none;
+        padding: 10pt;
+        font-size: 16px;  
+    }
+      
+    nav a:hover, nav .mobile-nav:hover .mobile-menu {
+        background-color: white;
+        color:#111;
+        border-radius: 10px;
+    }
+      
+    nav .mobile-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border-radius: 10px;
+    }
+      
+    nav .mobile-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    nav .mobile-content .Contacts {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    nav .mobile-content .Contact-Menu {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    nav .mobile-content a:hover {
+        background-color: #111;
+        color: white;
+    }
+    
+    nav .mobile-content .Contacts:hover {
+        background-color: #111;
+        color: white;
+    }
+
+    nav .mobile-nav:hover .mobile-content {
+        display: block;
+    }
+
+    main .Profile-Info{
+        width: 100vw;
+        float: left;
+        padding: 10pt 15pt 15pt 10pt;
+        background-color: rgba(7, 7, 7, 0.75);
+        color: white;
+    }
+    
+    main .Profile-Info p{
+        text-indent: 25px;
+        font-size: 17px;
+    }
+    
+    main .Skill-Info{
+        padding: 10pt 15pt 15pt 10pt;
+        background-color: rgba(7, 7, 7, 0.75);
+        color: white;
+        width: 80%;
+        margin-bottom: 50pt;
+    }
+    
+    main .Achievement-Info{
+        padding: 10pt 15pt 15pt 10pt;
+        background-color: rgba(7, 7, 7, 0.75);
+        color: white;
+        width: 80%;
+    }
+}
